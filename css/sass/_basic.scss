@@ -1,0 +1,59 @@
+/*=============================
+
+        Default Values
+
+Font: Roboto
+
+Colors:
+1. Forest Blue: #0a3d62;
+2. Black: #000;
+3. White: #fff;
+4. Red: #ff0000;
+
+==============================*/
+
+/*------------------------------
+        Basic setup
+------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: $Black;
+    font-family: "Roboto", sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    @media all and (max-width: 1420px) {
+        padding: 0 30px;
+    }
+
+    @media all and (max-width: 768px) {
+        padding: 0 10px;
+    }
+}
+

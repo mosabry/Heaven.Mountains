@@ -1,0 +1,70 @@
+/*------------------------------
+            About us
+------------------------------*/
+
+.about-us {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+
+
+    @media all and (max-width: 991px) {
+        flex-direction: column;
+    }
+
+    @media all and (max-width: 480px) {
+        margin-top: 40px;
+    }
+
+    .about-container {
+        margin: 0 60px;
+
+        @media all and (max-width: 768px) {
+            margin: 0 20px;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: $Forest-Blue;
+            display: block;
+
+            @media all and (max-width: 991px) {
+                font-size: 30px;
+                margin: 0 auto 20px auto;
+                width: 80%;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 70px;
+                height: 2px;
+                background-color: $Red;
+                margin-top: 10px;
+            }
+        }
+
+        p {
+            line-height: 1.7;
+            width: 80%;
+
+            @media all and (max-width: 991px) {
+                font-size: 15px;
+                margin: 0 auto 20px auto;
+            }
+
+            @media all and (max-width: 480px) {
+                width: 95%;
+            }
+        }
+    }
+
+    img {
+        max-width: 500px;
+
+        @media all and (max-width: 768px) {
+            width: 90%;
+        }
+    }
+}
